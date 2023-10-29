@@ -1,5 +1,311 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
+:root {
+	--color-black: #000;
+	--color-title: #DB00FF;
+	--color-main: #FF0070;
+	--font-family:  'IBM Plex mono', sans-serif;
+	--color-minor: #000028;
+}
+
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+	background-color: var(--color-minor);
+	max-width: 1024px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	background-image: url(../images/cover-image-dark.png);
+	object-fit: contain;
+	background-position: center;
+}
+
+.header__theme-menu {
+	margin-bottom: 270px;
+}
+
+.header__theme-menu-list {
+	display: flex;
+	justify-content: center;
+	padding: 0px;
+	padding-top: 20px;
+}
+
+.header__theme-menu-item {
+	list-style-type: none;
+	border: 0px solid var(--color-black);
+	background: transparent;
+	outline: none;
+	margin: 10px;
+}
+
+.header__theme-menu-button {
+	background: transparent;
+	color: var(--color-main);
+	outline: none;
+	border: 0px solid var(--color-black);
+	font-size: 18px;
+	text-transform: lowercase;
+	font-family: var(--font-family);
+}
+
+.sup {
+	display: block;
+	weight: 1px;
+	height: 1px;
+}
+
+.header__theme-menu-button_active {
+	border: 1px solid;
+}
+
+.header__title {
+	color: var(--color-title);
+	font-size: 157px;
+	font-weight: 800;
+	text-shadow: 4px 4px 0px var(--color-main);
+	margin-top: 270px;
+	margin-bottom: 108px;
+	line-height: 120px;
+	font-family: var(--font-family);
+}
+
+.title-div {
+	background-color: var(--color-main);
+	max-width: 491px;
+	margin-left: auto;
+	margin-right: 20px;
+	margin-bottom: 135px;
+}
+
+.title__two__bold {
+	color: var(--color-minor);
+	font-size: 18px;
+	font-weight: bold;
+	font-family: var(--font-family);
+}
+
+.title__two__regular {
+	color: var(--color-minor);
+	font-size: 18px;
+	font-weight: 400;
+	font-family: var(--font-family);
+}
+
+.title__three {
+	color: var(--color-main);
+	font-size: 18px;
+	font-weight: 800;
+	font-family: var(--font-family);
+}
+
+.text {
+	color: #F1B2CE;
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	font-family: var(--font-family);
+}
+
+.decorations {
+	position: absolute;
+	display: flex;
+	align-content: space-between;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+.corner-down {
+	border-left: 1px solid var(--color-main);
+	border-bottom: 1px solid var(--color-main);
+	width: 25px;
+	height: 25px;
+	margin-bottom: 3%;
+	margin-left: 3%;
+}
+
+.corner-up {
+	display: flex;
+	border-right: 1px solid var(--color-main);
+	border-top: 1px solid var(--color-main);
+	width: 25px;
+	height: 25px;
+}
+
+.div-rec {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 20px;
+	left: 90%;
+}
+
+.rec {
+	text-transform: uppercase;
+	color: var(--color-main);
+	font-size: 18px;
+	font-weight: 400;
+	font-family: var(--font-family);
+}
+
+.circle {
+	background: var(--color-main);
+	border-radius: 50%;
+	box-shadow: 0 0 4px 2px var(--color-main);
+	height: 9px;
+	width: 9px;
+	margin-left: 10px;
+}
+
+.title__of__selection__div {
+	max-width: 335px;
+	margin-left: 20px;
+}
+
+.title__of__selection__div__litle {
+	max-width: 145px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.block_title-div {
+	background-color: var(--color-main);
+	margin-bottom: 20px;
+}
+
+.block_title-div__second {
+	max-width: 984px;
+	background-color: var(--color-main);
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.section__first {
+	display: flex;
+	margin-top: 80px;
+}
+
+.section__second {
+	margin-top: 80px;
+}
+
+.first__selection_div_text {
+	max-width: 648px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.link {
+	text-shadow: 2px 2px 0px var(--color-main);
+}
+
+.second__selection_div_text {
+	display: flex;
+}
+
+.text__div {
+	margin-bottom: 20px;
+}
+
+.second__selection_text {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.div__images {
+	display: grid;
+	grid-template-columns: repeat(3, 230px);
+	grid-template-rows: 190px 230px 320px;
+	gap: 20px;
+	grid-auto-rows: 230px;
+	grid-auto-flow: dense;
+	justify-content: center
+}
+
+.images {
+	max-width: 230px;
+	max-height: 230px;
+	object-fit: cover;
+}
+
+.images1 {
+	max-width: 479px;
+	object-fit: cover;
+}
+
+.images2 {
+	max-width: 229px;
+	height: 441px;
+	object-fit: cover;
+}
+
+.images3 {
+	max-width: 229px;
+	height: 568px;
+	object-fit: cover;
+}
+
+.block-big--1 {
+	grid-column-start: 1;
+	grid-column-end: span 2;
+}
+
+.block-big--2 {
+	grid-column-start: 3;
+	grid-row-end: span 2;
+}
+
+.block-big--3 {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-row-end: span 3;
+}
+
+.block-big--4 {
+	grid-column-start: 2;
+	grid-row-start: 3;
+}
+
+.footer {
+	max-width: 100%;
+	max-height: 700px;
+	margin-top: 320px;
+}
+
+.footer__title__div {
+	padding-top: 60px;
+}
+
+.footer__title {
+	color: var(--color-title);
+	font-size: 157px;
+	font-weight: 800;
+	text-align: center;
+	font-family: var(--font-family);
+}
+
+.header__theme-menu-button:hover {
+	border: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.link:hover {
+	border-bottom: 1px solid currentColor;
+}
+
+.header__theme-menu-button:focus {
+	border-bottom: 1px solid currentColor;
+}
+
+.link:focus-visible {
+	display: inline-block;
+	line-height: 0.85;
+	border: none;
+	outline: 1px solid currentColor;
 }
