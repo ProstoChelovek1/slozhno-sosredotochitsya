@@ -15,6 +15,7 @@
 	display: grid;
 	grid-template-rows: 45px 403px 184px 135px;
 	grid-template-columns: 0px minmax(375px, 979px) 0px;
+	margin-bottom: 60px;
 }
 
 .header__theme-menu {
@@ -162,7 +163,7 @@
 	margin-bottom: 20px;
 }
 
-.section__title-left-text-right {
+.section__title-left-text-rightul:not(:first-child) {
 	display: flex;
 	margin-top: 80px;
 }
@@ -325,6 +326,7 @@
 		grid-column-start: 3;
 		grid-row-start: 2;
 		width: 70px;
+		margin-top: 147px;
 	}
 
 	.footer {
@@ -369,6 +371,7 @@
 	
 	.header {
 		display: block;
+		margin-bottom: 40px;
     }
 
 	.rec {
@@ -386,6 +389,7 @@
 	.header__theme-menu {
 		margin-bottom: auto;
 		margin-left: auto;
+		margin-top: 40px;
 	}
 
 	.corner-right-position-header {
