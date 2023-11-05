@@ -9,8 +9,6 @@
 
 	--background-color: #FFF1F7;
 	--background-image: url(../images/cover-image-light.png);
-    .header {
-	}
 
 	.header__title {
 		color: var(--color-minor_theme_light);

@@ -12,8 +12,6 @@
   */
 	--background-color: #000028;
 	--background-image: url(../images/cover-image-dark.png);	
-    .header {
-	}
 
 	.header__title {
 		color: var(--color-title);
