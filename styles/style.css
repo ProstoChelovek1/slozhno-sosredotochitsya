@@ -163,13 +163,13 @@
 	margin-bottom: 20px;
 }
 
-.section__title-left-text-rightul:not(:first-child) {
+.section__title-left-text-right {
 	display: flex;
-	margin-top: 80px;
 }
 
 .section__content_under_title {
 	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 .selection_div_text__one_column {
@@ -338,6 +338,9 @@
 		grid-template-columns: 0px minmax(375px, 698px) 0px;
     }
 
+	.header__title {
+		margin-top: 173px;	
+	}
 	.footer__title {
 		font-size: 120px;
 	}
@@ -389,7 +392,7 @@
 	.header__theme-menu {
 		margin-bottom: auto;
 		margin-left: auto;
-		margin-top: 40px;
+		margin-top: 30px;
 	}
 
 	.corner-right-position-header {
