@@ -3,18 +3,13 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root {
-	--color-background_theme_light: #FFF;
-	--color-title_theme_light: #353430;
-	--color-minor_theme_light: #FFC2E6;
-	--color-main_theme_light #FF8DCB;
-}
+
 
 .page.theme_light {
-	
-	background-color: var(--color-background_theme_light);
+
+	--background-color: #FFF1F7;
+	--background-image: url(../images/cover-image-light.png);
     .header {
-		background-image: none;
 	}
 
 	.header__title {
@@ -25,7 +20,7 @@
 		background-color: var(--color-main_theme_light);
 	}
 
-	.title__three {
+	.title__selection {
 		color: var(--color-title_theme_light);
 	}
 
@@ -33,7 +28,7 @@
 		background-color: var(--color-main_theme_light);
 	}
 
-	.title__two__bold {
+	.title__div__bold {
 		color: var(--color-title_theme_light);
 	}
 
@@ -41,7 +36,7 @@
 		color: var(--color-title_theme_light);
 	}
 
-	.block_title-div__second {
+	.block_title-div__images {
 		background-color: var(--color-main_theme_light);
 	}
 
@@ -58,18 +53,18 @@
 		color: var(--color-title_theme_light);
 	}
 
-	.header__theme-menu-button:hover {
+	.header__theme-menu-button:not(.header__theme-menu-button_active):hover {
 		border: 1px solid rgba(53, 52, 48, 0.4);
+		cursor: pointer;
 	}
 
-	.visually-hidden {
-		position: absolute; 
-		width: 1px; 
-		height: 1px;
-		margin: -1px; 
-		padding: 0; 
-		border: 0; 
-		clip: rect(0 0 0 0); 
-		overflow: hidden; 
-	} 
+	.rec::after {
+		content: "";
+		background: var(--background-color);
+		box-shadow: 0 0 0px 0px var(--background-color);	
+	}
+
+	.rec::before {
+		content: "";
+	}
 }

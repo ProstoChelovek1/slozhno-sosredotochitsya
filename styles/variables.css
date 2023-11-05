@@ -2,59 +2,17 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-@media (width <= 768px) {
-	.header__theme-menu-list {  
-		display: flex;
-        padding: 0px;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin-top: 195px;
-	}
 
-    .header__title {
-        margin-top: 205px;
-    }
+:root {
+	--font-family:  'IBM Plex mono', sans-serif;
 
-    .second__selection_div_text {
-        display: block;
-    }
-
-    .second__selection_text {
-        margin-bottom: 20px;
-    }
-}
-
-@media (width <= 375px) { 
-    .section__first {
-        display: block;
-    }
-
-    .title__of__selection__div {
-        margin-bottom: 20px;
-    }
-
-    .div__images {
-        display: block;
-    }
-
-    .images {
-        max-width: 355px !important;
-        max-height: 355px !important;
-    }
-
-    .images1 {
-        max-width: 355px !important;
-        max-height: 355px !important;
-    }
-
-    .images2 {
-        max-width: 355px !important;
-        max-height: 355px !important;
-    }
-
-    .images3 {
-        max-width: 355px !important;
-        max-height: 355px !important;
-    }
+	--color-title: #DB00FF;
+	--color-main: #FF0070;
+	--color-minor: #000028;
+	--background-image: url(../images/cover-image-light.png);
+	--color-background_theme_light: #FFF;
+	--color-title_theme_light: #353430;
+	--color-minor_theme_light: #FFC2E6;
+	--color-main_theme_light: #FF8DCB;
+    color-scheme: light dark;
 }
