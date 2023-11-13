@@ -4,7 +4,10 @@
 .page {
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 	max-width: 1024px;
-	background-color: var(--background-color);
+	background-image: var(--background-image);
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 .header {
@@ -39,7 +42,7 @@
 
 .header__theme-menu-button {
 	background: transparent;
-	color: var(--color-main);
+	color: var(--color-button);
 	outline: none;
 	border: 0px solid;
 	font-size: 18px;
@@ -56,11 +59,12 @@
 	margin-top: auto;
 	font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 	font-weight: 700;
-	text-shadow: 4px 4px 0px var(--color-main);
+	text-shadow: 4px 4px 0px  #FF0070;
 	line-height: 120px;
 	font-family: var(--font-family);
 	grid-column-start: 2;
 	grid-row-start: 2;
+	color: var(--color-title-main);
 }
 
 .title-div {
@@ -78,6 +82,8 @@
 	font-weight: bold;
 	font-family: var(--font-family);
 	margin-top: auto;
+	color: var(--color-minor);
+	background-color: var(--color-main);
 }
 
 .title__text__regular {
@@ -91,10 +97,11 @@
 	font-size: 18px;
 	font-weight: 700;
 	font-family: var(--font-family);
+	color: var(--color-main);
 }
 
 .text {
-	color: #F1B2CE;
+	color: var(--color-text);
 	font-size: 18px;
 	font-weight: 400;
 	margin-bottom: 20px;
@@ -152,6 +159,7 @@
 
 .block_title-div {
 	margin-bottom: 20px;
+	background-color: var(--color-main);
 }
 
 .block_title-div__images {
@@ -259,8 +267,8 @@
 .corner-left {
 	width: 25px;
 	height: 25px;
-	border-left: 1px solid var(--color-main);
-	border-bottom: 1px solid var(--color-main);
+	border-left: 1px solid var(--color-corner);
+	border-bottom: 1px solid var(--color-corner);
 	margin-left: 20px;
 	margin-bottom: 20px;
 	margin-top: auto;
@@ -274,8 +282,8 @@
 .corner-right {
 	width: 25px;
 	height: 25px;
-	border-right: 1px solid var(--color-main);
-	border-top: 1px solid var(--color-main);
+	border-right: 1px solid var(--color-corner);
+	border-top: 1px solid var(--color-corner);
 	margin-top: 20px;
 	margin-right: 20px;
 }
@@ -294,6 +302,8 @@
 	font-weight: 700;
 	text-align: center;
 	font-family: var(--font-family);
+	color: var(--color-title-main);
+	text-shadow: 2px 2px 0px #FF0070;
 }
 
 .link:hover {
@@ -309,6 +319,11 @@
 	line-height: 0.85;
 	border: none;
 	outline: 1px solid currentColor;
+}
+
+.header__theme-menu-button:not(.header__theme-menu-button_active):hover {
+	border: 1px solid rgba(255, 0, 112, 0.4);
+	cursor: pointer;
 }
 
 @media (width <= 768px) {

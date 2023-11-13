@@ -4,65 +4,57 @@
   переключая тему
 */
 
+:root.theme-light {
+	--color-title-main: #FFC2E6;
+	--color-title: #353430;
+	--color-main: #FF8DCB;
+	--color-minor: #353430;
+	--color-text: #353430;
+	--color-corner: #353430;
+	--background-image: url(../images/cover-image-light.png);
+}
 
 .page.theme_light {
-
-	--background-color: #FFF1F7;
+	--color-title-main: #FFC2E6;
+	--color-title: #353430;
+	--color-main: #FF8DCB;
+	--color-minor: #353430;
+	--color-button: #353430;
+	--color-text: #353430;
+	--color-corner: #353430;
 	--background-image: url(../images/cover-image-light.png);
-
-	.header__title {
-		color: var(--color-minor_theme_light);
+	.rec {
+		position: absolute; 
+		width: 1px; 
+		height: 1px;
+		margin: -1px; 
+		padding: 0; 
+		border: 0; 
+		clip: rect(0 0 0 0); 
+		overflow: hidden; 
 	}
+}
 
-	.title-div {
-		background-color: var(--color-main_theme_light);
-	}
-
-	.title__selection {
-		color: var(--color-title_theme_light);
-	}
-
-	.block_title-div {
-		background-color: var(--color-main_theme_light);
-	}
-
-	.title__div__bold {
-		color: var(--color-title_theme_light);
-	}
-
-	.text {
-		color: var(--color-title_theme_light);
-	}
-
-	.block_title-div__images {
-		background-color: var(--color-main_theme_light);
-	}
-
-	.footer__title {
-		color: var(--color-minor_theme_light);
-		text-shadow: 2px 2px 0px #FF0070;
-	}
-
-	.link {
-		text-shadow: 2px 2px 0px var(--color-main_theme_light);
-	}
-
-	.header__theme-menu-button {
-		color: var(--color-title_theme_light);
-	}
-
-	.header__theme-menu-button:not(.header__theme-menu-button_active):hover {
-		border: 1px solid rgba(53, 52, 48, 0.4);
-		cursor: pointer;
-	}
-
-	.rec::after {
-		content: "";
-		background: var(--background-color);
-		box-shadow: 0 0 0px 0px var(--background-color);	
-	}
-
-	.rec::before {
-		content: "";
-	}
+@media (prefers-color-scheme: light) {
+  :root {
+        /* Дублируем переменные светлой темы */    
+		--color-title-main: #FFC2E6;
+		--color-title: #353430;
+		--color-main: #FF8DCB;
+		--color-minor: #353430;
+		--color-button: #353430;
+		--color-text: #353430;
+		--color-corner: #353430;
+		--background-image: url(../images/cover-image-light.png);
+		.rec {
+			position: absolute; 
+			width: 1px; 
+			height: 1px;
+			margin: -1px; 
+			padding: 0; 
+			border: 0; 
+			clip: rect(0 0 0 0); 
+			overflow: hidden; 
+		}
+    }
 }

@@ -6,13 +6,13 @@
 :root {
 	--font-family:  'IBM Plex mono', sans-serif;
 
+	--color-button: #FF0070;
+	--color-title-main: #DB00FF;
 	--color-title: #DB00FF;
 	--color-main: #FF0070;
 	--color-minor: #000028;
-	--background-image: url(../images/cover-image-light.png);
-	--color-background_theme_light: #FFF;
-	--color-title_theme_light: #353430;
-	--color-minor_theme_light: #FFC2E6;
-	--color-main_theme_light: #FF8DCB;
-    color-scheme: light dark;
+	--color-text: #F1B2CE;
+	--color-corner: #FF0070;
+	--background-image: url(../images/cover-image-dark.png);
+    color-scheme: light dark; 
 }
