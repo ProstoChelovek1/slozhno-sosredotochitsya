@@ -12,9 +12,6 @@
 
 .header {
 	object-fit: contain;
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-image: var(--background-image);
 	display: grid;
 	grid-template-rows: 45px 403px 184px 135px;
 	grid-template-columns: 0px minmax(375px, 979px) 0px;
