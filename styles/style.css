@@ -151,7 +151,7 @@
 
 .section__title-left-text-right {
 	display: flex;
-	margin-bottom: 62px;
+	margin-bottom: 67px;
 }
 
 .section__content_under_title {
@@ -172,7 +172,8 @@
 .selection_div_text__many_columns {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 62px;
+	margin-bottom: 80px;
+	margin-right: 20px;
 }
 
 .text__div {
@@ -340,6 +341,7 @@
 
     .selection_div_text__many_columns {
         display: block;
+		margin-right: 0px;
     }
 
     .many_columns__selection_text {
