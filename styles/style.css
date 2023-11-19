@@ -131,7 +131,7 @@
 }
 
 .title__of__selection__div__litle {
-	max-width: 250px;
+	max-width: 260px;
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
@@ -172,7 +172,7 @@
 .selection_div_text__many_columns {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	margin-right: 20px;
 }
 
@@ -342,7 +342,8 @@
 
     .selection_div_text__many_columns {
         display: block;
-		margin-right: 0px;
+		margin-left: 20px;
+		margin-right: 20px;
     }
 
     .many_columns__selection_text {
@@ -354,6 +355,10 @@
 	.title-div {
 		margin-top: 162px;
 		width: 364px;
+	}
+
+	.selection_div_text__one_column {
+		max-width: 472px;
 	}
 
 	.corner-right-position-header {
@@ -410,6 +415,11 @@
 		top: 13px;
 		right: 19px;
 	}
+
+	.selection_div_text__many_columns {
+		margin-right: 0px;
+		margin-left: 0px;
+    }
 
 	.title-div {
 		margin-bottom: 31px;
