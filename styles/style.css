@@ -29,12 +29,13 @@
 	border: 0px solid;
 	background: transparent;
 	outline: none;
-	margin: 10px 10px 10px 0px;
+	margin: 20px 10px 0px 0px;
 }
 
 .header__theme-menu-button {
 	background: transparent;
 	color: var(--color-button);
+	width: 70px;
 	outline: none;
 	border: 0px solid;
 	font-size: 18px;
@@ -135,7 +136,7 @@
 }
 
 .block_title-div {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	background-color: var(--color-main);
 }
 
@@ -149,7 +150,7 @@
 
 .section__title-left-text-right {
 	display: flex;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 .section__content_under_title {
@@ -179,7 +180,6 @@
 
 .many_columns__selection_text {
 	margin-left: 20px;
-	margin-right: 20px;
 }
 
 .div__images {
@@ -312,13 +312,13 @@
 
 	.header__theme-menu {
 		width: 70px;
-		padding-top: 147px;
+		padding-top: 140px;
 		margin-top: 0px;
 		margin-left: auto;
 	}
 
 	.header__title {
-		margin-top: 173px;
+		margin-top: 160px;
 		text-shadow:  4px 4px 0px var(--color-main);
 	}
 
@@ -397,6 +397,7 @@
 
 	.title-div {
 		margin-bottom: 31px;
+		margin-top: 0px;
 		width: 355px;
 		margin-right: auto;
 		margin-left: auto;
@@ -491,8 +492,6 @@
 
 	.footer__title {
 		font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-		margin-top: 251px;
-		margin-bottom: 250px;
 	}
 
 	.header__theme-menu-item {
