@@ -4,16 +4,6 @@
   переключая тему
 */
 
-:root.theme-light {
-	--color-title-main: #FFC2E6;
-	--color-title: #353430;
-	--color-main: #FF8DCB;
-	--color-minor: #353430;
-	--color-text: #353430;
-	--color-corner: #353430;
-	--background-image: url(../images/cover-image-light.png);
-}
-
 .page.theme_light {
 	--color-title-main: #FFC2E6;
 	--color-title: #353430;
@@ -22,7 +12,9 @@
 	--color-button: #353430;
 	--color-text: #353430;
 	--color-corner: #353430;
+	--color-border-button: rgba(50, 49, 45, 0.4);
 	--background-image: url(../images/cover-image-light.png);
+	--color-title-selection: #353430;
 	.rec {
 		position: absolute; 
 		width: 1px; 
@@ -45,6 +37,7 @@
 		--color-button: #353430;
 		--color-text: #353430;
 		--color-corner: #353430;
+		--color-title-selection: #353430;
 		--background-image: url(../images/cover-image-light.png);
 		.rec {
 			position: absolute; 

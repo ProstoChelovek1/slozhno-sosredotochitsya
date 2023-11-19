@@ -11,8 +11,10 @@
 	--color-title: #DB00FF;
 	--color-main: #FF0070;
 	--color-minor: #000028;
+	--color-title-selection: #FF0070;
 	--color-text: #F1B2CE;
 	--color-corner: #FF0070;
 	--background-image: url(../images/cover-image-dark.png);
+	--color-border-button: rgba(255, 0, 112, 0.4);
     color-scheme: light dark; 
 }

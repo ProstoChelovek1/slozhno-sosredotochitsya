@@ -4,17 +4,6 @@
   переключая тему
 */
 
-:root.theme-dark {
-	--color-title: #DB00FF;
-	--color-main: #FF0070;
-	--color-minor: #000028;
-	--color-button: #FF0070;
-	--background-image: url(../images/cover-image-dark.png);
-	--color-title-main: #DB00FF;
-	--color-text: #F1B2CE;
-	--color-corner: #FF0070;
-}
-
 .page.theme_dark {
 	/* сохраните этот селектор в приведённом виде.
 	  Так стили написанные ниже будут иметь больший вес,
@@ -26,11 +15,13 @@
 	--color-button: #FF0070;
 	--background-image: url(../images/cover-image-dark.png);
 	--color-title-main: #DB00FF;
+	--color-title-selection: #FF0070;
 	--color-text: #F1B2CE;
 	--color-corner: #FF0070;
+	--color-border-button: rgba(255, 0, 112, 0.4);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root { 
 	--color-title: #DB00FF;
 	--color-main: #FF0070;
@@ -38,7 +29,9 @@
 	--color-button: #FF0070;
 	--background-image: url(../images/cover-image-dark.png);
 	--color-title-main: #DB00FF;
+	--color-title-selection: #FF0070;
 	--color-text: #F1B2CE;
 	--color-corner: #FF0070;
+	--color-border-button: rgba(255, 0, 112, 0.4);
   }
 }
