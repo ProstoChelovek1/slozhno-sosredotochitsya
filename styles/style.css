@@ -4,7 +4,7 @@
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     max-width: 1024px;
     background-image: var(--background-image);
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
@@ -197,57 +197,70 @@
 
 .div__images {
     display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 315px);
-    grid-template-rows: 260px 315px 428px;
+    width: calc(100% - 40px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(190px, 260px) minmax(230px, 315px) minmax(320px, 428px);
     gap: 20px;
     grid-auto-flow: dense;
-    justify-content: center;
+    margin-left: auto;
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 .image_books {
-    max-width: 315px;
-    max-height: 315px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.images_sunset_and_street {
-    max-width: 649px;
-    max-height: 428px;
+.images_sunset {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.images_street {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-right: 20px;
 }
 
 .image_ice-cream {
-    max-width: 315px;
-    height: 595px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .image_tape {
-    max-width: 315px;
-    height: 768px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    padding-bottom: 20px;
 }
 
 .block-big--1 {
-    grid-column-start: 1;
-    grid-column-end: span 2;
+    grid-column: 1 / span 2;
 }
 
 .block-big--2 {
-    grid-column-start: 3;
-    grid-row-end: span 2;
+    grid-column: 3;
+    grid-row: 1 / span 2;
 }
 
 .block-big--3 {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-row-end: span 3;
+    grid-column: 1;
+    grid-row: 2 / span 3;
 }
 
 .block-big--4 {
-    grid-column-start: 2;
-    grid-row-start: 3;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.block-big--5 {
+    grid-column: 2 / span 3;
+    grid-row: 3;
 }
 
 .footer {
@@ -400,31 +413,24 @@
     }
 
     .div__images {
-        grid-template-columns: repeat(3, 230px);
         grid-template-rows: 190px 230px 320px;
     }
 
     .image_books {
-        max-width: 230px;
         max-height: 230px;
-        object-fit: cover;
     }
 
-    .images_sunset_and_street {
-        max-width: 479px;
-        object-fit: cover;
+    .images_street {
+        padding-bottom: 20px;
     }
+    
 
     .image_ice-cream {
-        max-width: 229px;
         height: 441px;
-        object-fit: cover;
     }
 
     .image_tape {
-        max-width: 229px;
         height: 568px;
-        object-fit: cover;
     }
 }
 
@@ -511,6 +517,8 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        margin-right: auto;
+        width: 355px;
     }
 
     .block_title-div__images {
@@ -520,23 +528,31 @@
     }
 
     .image_books {
-        max-width: 355px;
+        max-width: 100%;
         max-height: 355px;
     }
 
-    .images_sunset_and_street {
-        max-width: 355px;
+    .images_street {
+        max-width: 100%;
+        max-height: 355px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .images_sunset {
+        max-width: 100%;
         max-height: 355px;
     }
 
     .image_ice-cream {
-        max-width: 355px;
+        max-width: 100%;
         max-height: 355px;
     }
 
     .image_tape {
-        max-width: 355px;
+        max-width: 100%;
         max-height: 237px;
+        padding-bottom: 0px;
     }
 
     .header__title {
