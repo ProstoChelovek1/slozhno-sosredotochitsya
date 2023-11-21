@@ -213,13 +213,13 @@
     object-fit: cover;
 }
 
-.images_sunset {
+.image_sunset {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.images_street {
+.image_street {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -360,7 +360,7 @@
     }
 
     .footer {
-        margin-top: 65px;
+        margin-top: 40px;
         padding-top: 435px;
         padding-bottom: 433px;
     }
@@ -420,17 +420,13 @@
         max-height: 230px;
     }
 
-    .images_street {
-        padding-bottom: 20px;
-    }
-    
-
     .image_ice-cream {
         height: 441px;
     }
 
     .image_tape {
         height: 568px;
+        padding-bottom: 0px;
     }
 }
 
@@ -479,9 +475,13 @@
         top: 10px;
     }
 
+    .covets_tablet_title {
+        margin-bottom: 11px;
+    }
+
     .section__title-left-text-right {
         display: block;
-        margin-bottom: 53px;
+        margin-bottom: 50px;
     }
 
     .selection_div_text__one_column {
@@ -508,7 +508,7 @@
 
     .title__of__selection__div {
         margin-left: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
         max-width: 350px;
     }
 
@@ -532,14 +532,14 @@
         max-height: 355px;
     }
 
-    .images_street {
+    .image_street {
         max-width: 100%;
         max-height: 355px;
         padding-right: 0px;
         padding-bottom: 0px;
     }
 
-    .images_sunset {
+    .image_sunset {
         max-width: 100%;
         max-height: 355px;
     }
@@ -552,7 +552,6 @@
     .image_tape {
         max-width: 100%;
         max-height: 237px;
-        padding-bottom: 0px;
     }
 
     .header__title {
@@ -574,7 +573,7 @@
     .footer {
         margin-top: 42px;
         padding-top: 260px;
-        padding-bottom: 258px;
+        padding-bottom: 255px;
     }
 
     .section__content_under_title {
