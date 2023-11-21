@@ -197,7 +197,7 @@
 
 .div__images {
     display: grid;
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(190px, 260px) minmax(230px, 315px) minmax(320px, 428px);
     gap: 20px;
@@ -266,9 +266,9 @@
 .footer {
     position: relative;
     max-width: 100%;
-    margin-top: 45px;
+    margin-top: 47px;
     padding-top: 283px;
-    padding-bottom: 279px;
+    padding-bottom: 277px;
 }
 
 .corners::before {
@@ -373,7 +373,7 @@
         display: block;
         margin-left: 20px;
         margin-right: 20px;
-        margin-bottom: 79px;
+        margin-bottom: 84px;
     }
 
     .many_columns__selection_text {
