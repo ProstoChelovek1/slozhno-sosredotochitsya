@@ -266,9 +266,9 @@
 .footer {
     position: relative;
     max-width: 100%;
-    margin-top: 47px;
-    padding-top: 283px;
-    padding-bottom: 277px;
+    margin-top: 44px;
+    padding-top: 280px;
+    padding-bottom: 280px;
 }
 
 .corners::before {
