@@ -481,7 +481,7 @@
 
     .section__title-left-text-right {
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .selection_div_text__one_column {
@@ -578,6 +578,6 @@
 
     .section__content_under_title {
         margin-bottom: 0px;
-        margin-top: 50px;
+        margin-top: 40px;
     }
 }
