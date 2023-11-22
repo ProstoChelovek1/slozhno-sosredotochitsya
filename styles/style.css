@@ -119,6 +119,17 @@
     font-family: var(--font-family);
 }
 
+.rec.theme_light {
+    position: absolute; 
+    width: 1px; 
+    height: 1px;
+    margin: -1px; 
+    padding: 0; 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+}
+
 .rec::after {
     display: block;
     content: "";
