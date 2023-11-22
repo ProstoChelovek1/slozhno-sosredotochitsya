@@ -19,6 +19,21 @@
 	--color-text: #F1B2CE;
 	--color-corner: #FF0070;
 	--color-border-button: rgba(255, 0, 112, 0.4);
+	.rec {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		top: 22px;
+		right: 29px;
+		text-transform: uppercase;
+		color: var(--color-main);
+		font-size: 18px;
+		font-weight: 400;
+		font-family: var(--font-family);
+		clip: auto;
+		width: max-content;
+		height: max-content;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,4 +49,19 @@
 	--color-corner: #FF0070;
 	--color-border-button: rgba(255, 0, 112, 0.4);
   }
+  .rec {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		top: 22px;
+		right: 29px;
+		text-transform: uppercase;
+		color: var(--color-main);
+		font-size: 18px;
+		font-weight: 400;
+		font-family: var(--font-family);
+		clip: auto;
+		width: max-content;
+		height: max-content;
+	}
 }
