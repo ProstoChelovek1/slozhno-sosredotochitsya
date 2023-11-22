@@ -359,6 +359,11 @@
         max-width: 200px;
     }
 
+    .title__of__selection__div {
+        max-width: 236px;
+        margin-left: auto;
+    }
+
     .footer {
         margin-top: 40px;
         padding-top: 435px;
@@ -389,6 +394,8 @@
 
     .selection_div_text__one_column {
         max-width: 472px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .corner-right-position-header {
